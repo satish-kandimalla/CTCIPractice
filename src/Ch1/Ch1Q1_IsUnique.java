@@ -6,6 +6,7 @@ public class Ch1Q1_IsUnique {
         boolean[] charArr = new boolean[128];
         for(int i=0;i<str.length();i++){
             int value = str.charAt(i);
+            System.out.println(value);
             if(charArr[value]){
                 return false;
             }else{
@@ -17,7 +18,7 @@ public class Ch1Q1_IsUnique {
     public static void main(String args[]){
         Ch1Q1_IsUnique obj = new Ch1Q1_IsUnique();
         String s1 = "satish";
-        String s2 = "algorithm";
+        String s2 = "algorithm$$";
         System.out.println(obj.isUnique(s1));
         System.out.println(obj.isUnique(s2));
     }
